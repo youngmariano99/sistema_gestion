@@ -1,3 +1,7 @@
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), 'modules'))
+
 from gestion_stock import agregar_productos_inventario, mostrar_productos, quitar_productos_inventario, actualizar_stock
 from gestion_ventas import registrar_venta
 from menus import mostrar_menu_principal
