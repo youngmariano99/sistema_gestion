@@ -3,6 +3,6 @@
 
 def decoradores():
 
-    
+
 def pedir_entero():
 
