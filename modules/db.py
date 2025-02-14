@@ -1,3 +1,23 @@
+import mysql.connector
+
+# Configurar la conexión
+db_config = {
+    'host': 'localhost',
+    'user': 'root',  # Reemplaza con tu usuario de MySQL
+    'password': '[Klisten1a3218]',  # Reemplaza con tu contraseña
+    'database': 'Sistema_Gestion_May'
+}
+
+def conectar():
+    """Conectar a la base de datos y devolver la conexión"""
+    try:
+        conn = mysql.connector.connect(**db_config)
+        if conn.is_connected():
+            print("Conexión exitosa a la base de datos")
+        return conn
+    except mysql.connector.Error as e:
+        print(f"Error al conectar: {e}")
+        return None
 
 
 class Producto:
@@ -37,3 +57,5 @@ Productos = {
     2: Producto("0002" ,"Banana", 30, 15.0, 30.0),
     3: Producto("0003" , "Naranja", 40, 18.0, 36.0)
 }
+
+
