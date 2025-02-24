@@ -1,1 +1,10 @@
+
+
+# Ignorar el archivo .env
+.env
+
+# Ignorar la carpeta env
+env/
+
+# Ignorar la carpeta __pycache__
 __pycache__/
